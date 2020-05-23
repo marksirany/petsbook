@@ -64,9 +64,105 @@
                     </div>
                 </div>
             </div>
+            <div class="col">
+                <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+                    <div class="card-header">
+                        <h3>Veterinary Infomation</h3>
+                    </div>
+                    <div class="card-body">
+            
+                        <form>
+                            <div class="form-group">
+            
+                                <label for="formGroupVet">Vet Name:</label>
+                                <input type="text" class="form-control" id="formGroupVet">
+                                
+                            </div>
+                            <div class="form-group">
+                            
+                                <label for="formGroupVetnum">Number:</label>
+                                <input type="text" class="form-control" id="formGroupVetnum">
+                            </div>
 
+                            <div class="form-group">
+                            
+                                <label for="formGroupVetaddress">Address:</label>
+                                <input type="text" class="form-control" id="formGroupVetaddress">
+                            </div>
+                           
+                            <button type="submit" class="btn btn-primary submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
 
+        <div class="col">
+            <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+                <div class="card-header">
+                    <h3>Medication Infomation</h3>
+                </div>
+                <div class="card-body">
+        
+                    <form>
+                        <div class="form-group">
+        
+                            <label for="formGroupMeds">Medication Name:</label>
+                            <input type="text" class="form-control" id="formGroupMeds">
+        
+                        </div>
+                        <div class="form-group">
+        
+                            <label for="formGroupMedsstrength">Strength:</label>
+                            <input type="text" class="form-control" id="formGroupMedsstrength">
+                        </div>
+        
+                        <div class="form-group">
+        
+                            <label for="formGroupMedsfrequency">Frequency:</label>
+                            <input type="text" class="form-control" id="formGroupMedsfrequency">
+                        </div>
+        
+                        <button type="submit" class="btn btn-primary submit">Submit</button>
+                    </form>
+                </div>
+            </div>
         </div>
+
+        <div class="col">
+            <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+                <div class="card-header">
+                    <h3>Feeding Infomation</h3>
+                </div>
+                <div class="card-body">
+        
+                    <form>
+                        <div class="form-group">
+        
+                            <label for="formGroupFood">Food Name:</label>
+                            <input type="text" class="form-control" id="formGroupFood">
+        
+                        </div>
+                        <div class="form-group">
+        
+                            <label for="formGroupFoodbrand">Brand:</label>
+                            <input type="text" class="form-control" id="formGroupFoodbrand">
+                        </div>
+        
+                        <div class="form-group">
+        
+                            <label for="formGroupFoodfrequency">Frequency:</label>
+                            <input type="text" class="form-control" id="formGroupFoodfrequency">
+                        </div>
+        
+                        <button type="submit" class="btn btn-primary submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
 
 
         <style>
@@ -102,7 +198,17 @@ background-attachment: fixed;
             petName: $("#formGroupName").val().trim(),
             petSpecies: $("#formGroupSpecies").val().trim(),
             petGender: $("#formGroupGender").val().trim(),
-            petDOB: $("#formGroupDob").val().trim()
+            petDOB: $("#formGroupDob").val().trim(),
+            petVet: $("#formGroupVet").val().trim(),
+            petVetnum: $("#formGroupVetnum").val().trim(),
+            petVetaddress: $("#formGroupVetaddress").val().trim(),
+            petMeds: $("#formGroupMeds").val().trim(),
+            petMedsstrength: $("#formGroupMedsstrength").val().trim(),
+            petMedsfreqency: $("#formGroupMedsfrequency").val().trim(),
+            petFood: $("#formGroupFood").val().trim(),
+            petFoodbrand: $("#formGroupFoodbrand").val().trim(),
+            petFoodfrequency: $("#formGroupFoodfrequency").val().trim(),
+           
         };
 
         console.log(newPet);
@@ -130,6 +236,15 @@ background-attachment: fixed;
                 $("#formGroupSpecies").val("");
                 $("#formGroupGender").val("");
                 $("#formGroupDob").val("");
+                $("#formGroupVet").val("");
+                $("#formGroupVetnum").val("");
+                $("#formGroupVetaddress").val("");
+                $("#formGroupMeds").val("");
+                $("#formGroupMedsstrength").val("");
+                $("#formGroupMedsfrequency").val("");
+                $("#formGroupFood").val("");
+                $("#formGroupFoodbrand").val("");
+                $("#formGroupFoodfrequency").val("");
 
             });
 

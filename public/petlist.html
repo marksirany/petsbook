@@ -27,14 +27,14 @@
 
    
     <br>
-    
+<div class="container"></div>
 
     <div class="card">
         <div class="card-header">
             <h4>Your Pets</h4>
         </div>
         <div class="card-body">
-            <ul id="petList" class="list-group"></ul>
+            <ul id="petList" class="card text-white bg-primary mb-3"></ul>
         </div>
     </div>
 
@@ -77,18 +77,39 @@ background-attachment: fixed;
                     var petList = $("#petList");
 
                     // Then display the fields in the HTML (Section Name, Date, URL)
-                    var listItem = $("<li class='list-group-item mt-4'>");
+                    var listItem = $("<card>");
 
                     listItem.append(
-                        $("<h2>").text("Pet #" + (i + 1)),
+                    $("<hr>"),    
+                    $("<h3>").text("Pet #" + (i + 1)),
                         $("<hr>"),
                         
-                        $("<h2>").text("Name: " + petData[i].petName),
-                        $("<h2>").text("Species: " + petData[i].petSpecies),
-                        $("<h2>").text("Gender: " + petData[i].petGender),
-                        $("<h2>").text("DOB: " + petData[i].petDob)
+                        $("<h4>").text("NAME: " + petData[i].petName),
+                        $("<h4>").text("\u2022   Species: " + petData[i].petSpecies),
+                        $("<h4>").text("\u2022   Gender: " + petData[i].petGender),
+                        $("<h4>").text("\u2022   DOB: " + petData[i].petDob),
+                    
+                        $("<br>"),
+                        $("<h4>").text("VETERINARIAN: " + petData[i].petVet),
+                        $("<h4>").text("\u2022   Phone Number: " + petData[i].petVetnum),
+                        $("<h4>").text("\u2022   Address: " + petData[i].petVetaddress),
+                        $("<br>"),
+
+                        
+                        $("<h4>").text("MEDICATION: " + petData[i].petMeds),
+                        $("<h4>").text("\u2022   Strength: " + petData[i].petMedsstrength),
+                        $("<h4>").text("\u2022   Frequency: " + petData[i].petMedsfrequency),
+                        $("<br>"),
+
+                        $("<h4>").text("FOOD: " + petData[i].petFood),
+                        $("<h4>").text("\u2022   Brand: " + petData[i].petFoodbrand),
+                        $("<h4>").text("\u2022   Frequency: " + petData[i].petFoodfrequency),
+                        $("<br>")
                     );
 
+                    
+
+                  
                     petList.append(listItem);
                 }
             });

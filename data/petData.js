@@ -10,7 +10,16 @@ var petArray = [
         petName: "Chowzee",
         petSpecies: "Feline",
         petGender: "Female",
-        petDob: "07.07.2007"
+        petDob: "07.07.2007",
+        petVet: "dr no",
+        petVetnum: "612.867.2808",
+        petVetaddress: "2323 n120th",
+        petMeds: "zolofty",
+        petMedsstrength: "alot",
+        petMedsfrequency: "all day",
+        petFood: "Beer",
+        petFoodbrand: "Coors",
+        petFoodfrequency: "every day",
     }
 ];
 
